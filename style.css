@@ -1,0 +1,152 @@
+body{
+    margin: 0;    
+}
+
+button{
+    background-color: #596D48;
+    min-width: 180px;
+    min-height: 40px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+
+}
+
+input {    
+    border-color: #E5E7EB;
+    border-radius: 4px;        
+    border-style: solid;     
+    min-width: 300px;
+    min-height: 25px;    
+    padding : 0 10px;
+    margin  : 0;    
+    background : none;
+}
+
+input:hover {
+    border-color: lightblue;
+}
+
+input:focus {
+    outline: none;
+    border: 2px;
+    border-color: lightskyblue;
+    border-style: solid;
+    box-shadow: 2px 2px 2px 1px lightskyblue;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
+ul li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+img[id="card-logo"] {
+    width: 5vw;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;  
+}
+
+#left-section{
+    width: 35%;
+    height: 100vh;
+    background-image: url("./images/left-image.jpg");    
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; 
+}
+
+#right-section{
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right-section div{
+    
+    padding-left: 5%;
+    padding-right: 15%;    
+}
+
+#card-body {
+    position: absolute;
+    width: inherit;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 84px;    
+    text-align: center;
+    margin-top: 18vh;
+    
+}
+
+#card-header{    
+    display: flex;
+    justify-content: center;    
+    align-items: center;    
+    padding: 0;
+}
+
+#card-logo-container {
+    padding: 2% 0%;    
+    display: flex;    
+}
+
+#rs-intro {
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: flex-end;    
+    flex-direction: column;
+    min-height: 25%;
+    height: 100%;
+    padding-bottom: 3%;
+}
+
+#rs-inputs {
+    background-color: white;
+    height: 100%;
+    
+}
+
+#rs-confirmation {
+    padding-top: 3%;
+    background-color: #E5E7EB;
+    min-height: 25%;
+    height: 100%;
+}
+
+input[class="error"]{
+    
+    border-color: red;    
+}
+
+input[class="error"]:hover {
+    border-color: lightblue ;
+}
+
+input[class="error"]:focus {
+    outline: none;
+    border: 2px;
+    border-color: lightskyblue;
+    border-style: solid;
+    box-shadow: 2px 2px 2px 1px lightskyblue;
+}

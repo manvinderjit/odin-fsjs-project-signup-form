@@ -10,27 +10,35 @@
 <body>
     <div id="container">
         <div id="left-section">
-            <div id="header-logo"></div>
+            <div id="card-body">
+                <div id="card-header">
+                    <div id="card-logo-container"><img id="card-logo" src="images/odin-lined.png"></div>
+                    <div>ODIN</div>
+                </div>                
+            </div>
         </div>
         <div id="right-section">
             <div id="rs-intro">
-                <h2>This is not a real service! You know you need something like this in your life to help you realize your deepest dreams.</h2>
-                <h3>Sign Up now to get started!</h3>                
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign Up <em>now</em> to get started!</h2>
+                <h3>You <em>know</em> what you want.</h3>
 
             </div>
             <div id="rs-inputs">
-                <h2>Let's do this!</h2>
-                <ul>
-                    <li><label for="">FIRST NAME</label><input type="text"></li>
-                    <li><label for="">LAST NAME</label><input type="text"></li>
-                    <li><label for="">EMAIL</label><input type="text"></li>
-                    <li><label for="">PHONE NUMBER</label><input type="text"></li>
-                    <li><label for="">PASSWORD</label><input type="text"></li>
-                    <li><label for="">CONFIRM PASSWORD</label><input type="text"></li>
-                </ul>                
+                <form action="">
+                    <legend><h2>Let's do this!</h2></legend>
+                    <ul>
+                        <li><label for="firstnane">FIRST NAME</label><input id="firstnane" type="text" required></li>
+                        <li><label for="lastname">LAST NAME</label><input id="lastname" type="text" required></li>
+                        <li><label for="user-email">EMAIL</label><input id="user-email" type="email" required></li>
+                        <li><label for="phone-number">PHONE NUMBER</label><input id="phone-number" type="text" required></li>
+                        <li><label for="password">PASSWORD</label><input id="password" type="password" class="error" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></li>
+                        <li><label for="confirm-password">CONFIRM PASSWORD</label><input id="confirm-password" type="password" class="error" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></li>
+                    </ul>       
+                     
             </div>
             <div id="rs-confirmation">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
+            </form>    
                 <p>Already have an account? <a href="">Log In</a></p>
             </div>
 
