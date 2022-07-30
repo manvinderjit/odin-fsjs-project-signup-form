@@ -31,10 +31,11 @@
                         <li><label for="lastname">LAST NAME</label><input id="lastname" type="text" required></li>
                         <li><label for="user-email">EMAIL</label><input id="user-email" type="email" required></li>
                         <li><label for="phone-number">PHONE NUMBER</label><input id="phone-number" type="text" required></li>
-                        <li><label for="password">PASSWORD</label><input id="password" type="password" class="error" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></li>
-                        <li><label for="confirm-password">CONFIRM PASSWORD</label><input id="confirm-password" type="password" class="error" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></li>
+                        <li><label for="password">PASSWORD</label><input id="password" type="password" required min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Eight Characters Minimum"></li>
+                        <li><label for="confirm-password">CONFIRM PASSWORD</label><input id="confirm-password" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Eight Characters Minimum"></li>
+                        <span id="password-error"></span>
                     </ul>       
-                     
+                    
             </div>
             <div id="rs-confirmation">
                 <button type="submit">Create Account</button>
@@ -45,4 +46,5 @@
         </div>
     </div>
 </body>
+<script type="text/javascript" src="js-script.js"></script>
 </html>

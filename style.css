@@ -108,7 +108,9 @@ img[id="card-logo"] {
 
 #card-logo-container {
     padding: 2% 0%;    
-    display: flex;    
+    display: flex;   
+    min-height: 128px; 
+    min-width: 84px;
 }
 
 #rs-intro {
@@ -134,8 +136,7 @@ img[id="card-logo"] {
     height: 100%;
 }
 
-input[class="error"]{
-    
+input[class="error"]{    
     border-color: red;    
 }
 
@@ -149,4 +150,8 @@ input[class="error"]:focus {
     border-color: lightskyblue;
     border-style: solid;
     box-shadow: 2px 2px 2px 1px lightskyblue;
+}
+
+span[id="password-error"]{
+    color: red;
 }
